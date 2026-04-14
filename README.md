@@ -4,4 +4,4 @@ description: Module description.
 level: 200
 ---
 
-Template for GitHub-based content
+Template for GitHub-based content!
