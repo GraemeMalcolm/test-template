@@ -1,0 +1,32 @@
+title: Content Template
+description: Repository template for markdown-based skilling content
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections
+collections:
+  content_pages:
+    output: true
+    permalink: /content/:name
+
+# Default layouts
+defaults:
+  - scope:
+      path: "content"
+      type: "content_pages"
+    values:
+      layout: "content"
+
+# Include content directory
+include:
+  - content
+
+# Exclude files from build
+exclude:
+  - spec.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
